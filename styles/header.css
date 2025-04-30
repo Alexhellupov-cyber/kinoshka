@@ -10,6 +10,7 @@ header .logo a {
 }
 
 header{
+    background-color: brown;
     display: flex;
     padding:20px; 
     align-content: center;
