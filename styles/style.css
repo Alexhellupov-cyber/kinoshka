@@ -1,0 +1,43 @@
+:root {
+    --black :#04202c;
+    --dark-green: #3040404;
+    --green:#5b7065;
+    --white:#c9d1c8;
+
+  }
+  
+
+img{
+    width: 60px;
+    height: 60px;
+}
+
+html{
+    background-color: var(--white);
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+
+.logo{
+    font-family: 'Metro', sans-serif;
+}
+
+.logo a {
+    text-decoration: none;
+    color: inherit; /* Наследует цвет от родительского элемента */
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Расстояние между картинкой и текстом */
+}
+
+header{
+    display: flex;
+}
+
+.test{
+    padding: 10000px;
+}

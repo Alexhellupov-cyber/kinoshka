@@ -1,0 +1,16 @@
+@font-face {
+    font-family: 'Metro';
+    src: url('/fonts/metro/Metro.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+
+@font-face {
+    font-family: 'Garet';
+    src: url('/fonts/garet/Garet-Book.otf') format('opentype');
+    font-weight:normal;
+    font-style: normal;
+  }
+
+
