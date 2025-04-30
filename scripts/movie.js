@@ -16,18 +16,21 @@ document.addEventListener("DOMContentLoaded", () => {
     function showMovies(movies) {
       const movieList = document.getElementById('movie-list');
       movieList.innerHTML = "";
-  
+    
       movies.forEach(movie => {
         const div = document.createElement('div');
         div.className = 'movie';
         div.innerHTML = `
           <img src="${IMAGE_URL + movie.poster_path}" alt="${movie.title}">
           <h3>${movie.title}</h3>
-          <button onclick="alert('Смотреть: ${movie.title}')">Смотреть</button>
+          <a href="watch.html?id=${movie.id}">
+            <button>Смотреть</button>
+          </a>
         `;
         movieList.appendChild(div);
       });
     }
+    
   
     fetchMovies();
   });

@@ -1,5 +1,5 @@
 main{
-  padding: 300px;
+  padding: 160px 300px;
 }
 
 .movie-section {
@@ -28,7 +28,7 @@ main{
     transition: transform 0.3s;
   }
   
-  .movie:hover {
+  .movie button:hover {
     transform: scale(1.05);
   }
   
