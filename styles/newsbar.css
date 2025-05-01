@@ -1,0 +1,171 @@
+/* News Bar Styles */
+.newsBar {
+    padding: 2rem 4rem;
+    background: linear-gradient(to bottom, #1a1a1a, #121212);
+  }
+  
+  .newsBar h4 {
+    color: #fff;
+    font-size: 1.75rem;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+  }
+  
+  .news-wrapper {
+    position: relative;
+    width: 100%;
+  }
+  
+  .news-carousel {
+    display: flex;
+    gap: 1.5rem;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    padding: 0.5rem 0 1.5rem 0;
+    scrollbar-width: none; /* Firefox */
+  }
+  
+  .news-carousel::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+  }
+  
+  .movie-card {
+    flex: 0 0 auto;
+    width: 220px;
+    border-radius: 0.75rem;
+    overflow: hidden;
+    background: #1f1f1f;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .movie-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  }
+  
+  .movie-poster {
+    position: relative;
+    height: 300px;
+    overflow: hidden;
+  }
+  
+  .movie-poster img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+  }
+  
+  .movie-card:hover .movie-poster img {
+    transform: scale(1.05);
+  }
+  
+  .movie-info {
+    padding: 1rem;
+  }
+  
+  .movie-title {
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .movie-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .movie-year {
+    color: #9ca3af;
+    font-size: 0.875rem;
+  }
+  
+  .movie-rating {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    color: #f59e0b;
+    font-size: 0.875rem;
+    font-weight: 600;
+  }
+  
+  .movie-rating svg {
+    width: 14px;
+    height: 14px;
+  }
+  
+  .arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 10;
+    transition: all 0.3s ease;
+    color: white;
+  }
+  
+  .arrow:hover {
+    background-color: rgba(0, 0, 0, 0.9);
+    transform: translateY(-50%) scale(1.1);
+  }
+  
+  .left {
+    left: -20px;
+  }
+  
+  .right {
+    right: -20px;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .newsBar {
+      padding: 1.5rem 1rem;
+    }
+    
+    .movie-card {
+      width: 160px;
+    }
+    
+    .movie-poster {
+      height: 240px;
+    }
+    
+    .arrow {
+      width: 36px;
+      height: 36px;
+    }
+    
+    .left {
+      left: -8px;
+    }
+    
+    .right {
+      right: -8px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .movie-card {
+      width: 140px;
+    }
+    
+    .movie-poster {
+      height: 200px;
+    }
+  }

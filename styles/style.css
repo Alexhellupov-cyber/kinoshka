@@ -14,6 +14,8 @@ img{
 
 html{
     background-color: var(--white);
+    left: 0;
+    right: 0;
 }
 
 a{
@@ -35,6 +37,7 @@ a{
 }
 
 header{
+    z-index: 999;
     display: flex;
 }
 

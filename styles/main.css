@@ -2,6 +2,10 @@ main{
   padding: 160px 300px;
 }
 
+.movie{
+  height: 380px;
+  padding:20px;
+}
 .movie-section {
     
     padding: 40px 20px;
@@ -18,10 +22,12 @@ main{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
     gap: 16px;
+    /* max-width: 250px; */
+    /* max-height: 250px; */
   }
   
   .movie {
-    background-color: #2a2a2a;
+    background-color: #1b1b1b;
     border-radius: 8px;
     overflow: hidden;
     text-align: center;
@@ -53,5 +59,16 @@ main{
     cursor: pointer;
     color: white;
     font-weight: bold;
+  }
+
+  .movieSec{
+    background-color: #302f2f;
+    padding: 20px;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);  
+  }
+
+  .movie h2{
+    font-family: 'Garet', sans-serif;
   }
   

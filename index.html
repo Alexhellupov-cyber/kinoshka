@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./styles/fonts.css">
     <link rel="stylesheet" href="./styles/header.css">
     <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/newsbar.css">
 </head>
 <body>
     <header>
@@ -38,12 +39,29 @@
             </button>
         </div>
     </header> <!--Header section-->
+    <section class="newsBar">
+        <h4>Новинки в Кіно</h4>
+        <div class="news-wrapper">
+            <div class="arrow left">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+            </div>
+            <div class="news-carousel" id="news-carousel"></div>
+            <div class="arrow right">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+            </div>
+        </div>
+    </section>
     <main>
-        <section class="movie-grid" id="movie-list">
-
+        <section class="movie">
+            <h2> Фільми </h2>
+        <div class="movie-grid" id="movie-list">
+        
+        </div>
         </section>
     </main> <!--Main section-->
+    <!-- <p class="test">234</p> -->
     <footer></footer><!--Footer section-->
+    <script src="./scripts/newsbar.js"></script>
     <script src="./scripts/script.js"></script>
     <script src="./scripts/movie.js"></script>
     <script src="./scripts/watch.js"></script>
