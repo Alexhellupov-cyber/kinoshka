@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="./styles/header.css">
     <link rel="stylesheet" href="./styles/main.css">
     <link rel="stylesheet" href="./styles/newsbar.css">
+    <link rel="stylesheet" href="./styles/movie.css">
+    <link rel="stylesheet" href="./styles/footer.css">
 </head>
 <body>
     <header>
@@ -21,11 +23,51 @@
         </div>
         <div class="menuSection">
             <ul>
-                <li><a href="#">Топ</a></li>
-                <li><a href="#">Фільми</a></li>
-                <li><a href="#">Серіали</a></li>
-                <li><a href="#">Мультфільми</a></li>
-                <li><a href="#">Аніме</a></li>
+                <li>
+                    <a href="#">Топ</a>
+                    <div class="dropdown-menu">
+                        <a href="top-rated.html">Найвищий рейтинг</a>
+                        <a href="popular.html">Популярні</a>
+                        <a href="trending.html">Тренди</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">Фільми</a>
+                    <div class="dropdown-menu">
+                        <a href="action.html">Бойовики</a>
+                        <a href="comedy.html">Комедії</a>
+                        <a href="drama.html">Драми</a>
+                        <a href="horror.html">Жахи</a>
+                        <a href="thriller.html">Трилери</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">Серіали</a>
+                    <div class="dropdown-menu">
+                        <a href="drama-series.html">Драматичні</a>
+                        <a href="comedy-series.html">Комедійні</a>
+                        <a href="crime-series.html">Кримінальні</a>
+                        <a href="fantasy-series.html">Фентезі</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">Мультфільми</a>
+                    <div class="dropdown-menu">
+                        <a href="animated-movies.html">Повнометражні</a>
+                        <a href="animated-series.html">Мультсеріали</a>
+                        <a href="disney.html">Disney</a>
+                        <a href="pixar.html">Pixar</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">Аніме</a>
+                    <div class="dropdown-menu">
+                        <a href="anime-action.html">Екшн</a>
+                        <a href="anime-romance.html">Романтика</a>
+                        <a href="anime-fantasy.html">Фентезі</a>
+                        <a href="anime-horror.html">Жахи</a>
+                    </div>
+                </li>
             </ul>
         </div>
         <div class="searchBar">
@@ -38,7 +80,7 @@
                 Увійти
             </button>
         </div>
-    </header> <!--Header section-->
+    </header>
     <section class="newsBar">
         <h4>Новинки в Кіно</h4>
         <div class="news-wrapper">
@@ -53,17 +95,47 @@
     </section>
     <main>
         <section class="movie">
-            <h2> Фільми </h2>
-        <div class="movie-grid" id="movie-list">
-        
-        </div>
+            <h2>Фільми</h2>
+            <div class="movie-grid" id="movie-list"></div>
         </section>
-    </main> <!--Main section-->
-    <!-- <p class="test">234</p> -->
-    <footer></footer><!--Footer section-->
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="./img/logoicon.png" alt="Logo">
+                <h3>Kinoshka</h3>
+            </div>
+            <div class="footer-links">
+                <div class="footer-section">
+                    <h4>Навігація</h4>
+                    <ul>
+                        <li><a href="#">Головна</a></li>
+                        <li><a href="#">Топ</a></li>
+                        <li><a href="#">Фільми</a></li>
+                        <li><a href="#">Серіали</a></li>
+                        <li><a href="#">Мультфільми</a></li>
+                        <li><a href="#">Аніме</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Інформація</h4>
+                    <ul>
+                        <li><a href="#">Про нас</a></li>
+                        <li><a href="#">Правила користування</a></li>
+                        <li><a href="#">Політика конфіденційності</a></li>
+                        <li><a href="#">Контакти</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span id="current-year"></span> Kinoshka. Всі права захищені.</p>
+        </div>
+    </footer>
+    <script src="./scripts/data.js"></script>
     <script src="./scripts/newsbar.js"></script>
-    <script src="./scripts/script.js"></script>
     <script src="./scripts/movie.js"></script>
+    <script src="./scripts/script.js"></script>
     <script src="./scripts/watch.js"></script>
 </body>
 </html>

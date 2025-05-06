@@ -1,40 +1,167 @@
-header .logo h3{
-    font-family: 'Metro', sans-serif;
-}
-
-header .logo a {
-    text-decoration: none;
-    color: inherit;
+header {
+    display: flex;
     align-items: center;
-    gap: 15px;
-}
-
-.logo a:hover{
-    transform: scale(1.05);
-}
-
-header{
-    background-color: brown;
+    justify-content: space-between;
+    padding: 16px 32px;
+    background-color: #121212;
+  }
+  
+  .logo a {
     display: flex;
-    padding:20px 20px 20px 20px; 
-    align-content: center;
-    text-align: center;
-    justify-content: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    width: 100%;
-}
-
-.menuSection ul{
-    font-family: 'Garet', sans-serif;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .logo img {
+    width: 36px;
+    height: 36px;
+  }
+  
+  .logo h3 {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 24px;
+  }
+  
+  .menuSection ul {
     display: flex;
-    gap:40px;
-    background-color: var(--dark-green); 
-    padding: 15px;
-    margin: 10px 100px;
     list-style: none;
-    border: 1px solid rgba(255, 255, 255, 0.5);
-}
-
+    gap: 24px;
+  }
+  
+  .menuSection li {
+    position: relative;
+  }
+  
+  .menuSection a {
+    color: #e0e0e0;
+    font-weight: 500;
+    font-size: 16px;
+    transition: color 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+  
+  .menuSection a:hover {
+    color: #ff4c29;
+  }
+  
+  .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #1d1d1d;
+    border-radius: 8px;
+    padding: 8px 0;
+    min-width: 200px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: all 0.3s ease;
+    z-index: 100;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .menuSection li:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+  
+  .dropdown-menu a {
+    padding: 8px 16px;
+    display: block;
+    color: #e0e0e0;
+    font-size: 14px;
+  }
+  
+  .dropdown-menu a:hover {
+    background-color: #2d2d2d;
+  }
+  
+  .searchBar {
+    display: flex;
+    align-items: center;
+    background-color: #1d1d1d;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 300px;
+  }
+  
+  .searchBar input {
+    flex: 1;
+    padding: 10px 16px;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    font-family: 'Gilroy', sans-serif;
+  }
+  
+  .searchBar button {
+    padding: 10px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #e0e0e0;
+    transition: color 0.3s ease;
+  }
+  
+  .searchBar button:hover {
+    color: #ff4c29;
+  }
+  
+  .searchBar button img {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .loginMenu button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 16px;
+    background-color: #ff4c29;
+    color: #ffffff;
+    border-radius: 8px;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+  }
+  
+  .loginMenu button:hover {
+    background-color: #e63e21;
+  }
+  
+  .loginMenu button img {
+    width: 20px;
+    height: 20px;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 1024px) {
+    .menuSection {
+      display: none;
+    }
+    
+    .searchBar {
+      width: 250px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    header {
+      padding: 12px 16px;
+      flex-wrap: wrap;
+    }
+    
+    .searchBar {
+      order: 3;
+      width: 100%;
+      margin-top: 12px;
+    }
+    
+    .loginMenu {
+      margin-left: auto;
+    }
+  }
